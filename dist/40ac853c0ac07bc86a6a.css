@@ -1,0 +1,220 @@
+/* 
+ * Copyright (c) Microsoft Corporation. All rights reserved. Licensed under the MIT license.
+ * See LICENSE in the project root for license information.
+ */
+
+ html,
+ body {
+     width: 100%;
+     height: 100%;
+     margin: 0;
+     padding: 0;
+ }
+ #app-body {
+    background-color: white;
+ }
+ 
+ ul {
+     margin: 0;
+     padding: 0;
+ }
+
+ input, select {
+    width: 100%;
+    margin-left: 12px;
+    margin-right: 12px;
+    margin-bottom: 12px;
+    max-width: 400px;
+    font-size: 16px;
+ }
+
+ select {
+    height: 28px;
+ }
+
+/* CSS */
+button {
+  appearance: button;
+  backface-visibility: hidden;
+  background-color: #405cf5;
+  border-radius: 12px;
+  border-width: 0;
+  box-shadow: rgba(50, 50, 93, .1) 0 0 0 1px inset,rgba(50, 50, 93, .1) 0 2px 5px 0,rgba(0, 0, 0, .07) 0 1px 1px 0;
+  box-sizing: border-box;
+  color: white;
+  cursor: pointer;
+  font-family: -apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue",Ubuntu,sans-serif;
+  font-size: 100%;
+  height: 44px;
+  line-height: 1.15;
+  margin: 12px;
+  margin-top: 20px;
+  outline: none;
+  overflow: hidden;
+  padding: 0 25px;
+  position: relative;
+  text-align: center;
+  text-transform: none;
+  transform: translateZ(0);
+  transition: all .2s,box-shadow .08s ease-in;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: 40%;
+  min-width: 120px;
+  max-width: 150px;
+}
+
+.title-box {
+   width: 100%;
+   margin: 12px;
+   text-align: center;
+   font-weight: 500;
+}
+
+button:disabled {
+  cursor: default;
+}
+
+button:focus {
+  box-shadow: rgba(50, 50, 93, .1) 0 0 0 1px inset, rgba(50, 50, 93, .2) 0 6px 15px 0, rgba(0, 0, 0, .1) 0 2px 2px 0, rgba(50, 151, 211, .3) 0 0 0 4px;
+}
+
+ label {
+    max-width: 400px;
+    font-size: 20px;
+    text-align: center;
+    margin: 12px;
+    width: 100%;
+ }
+ 
+ .ms-welcome__header {
+    color: black;
+    font-weight: 500;
+    padding: 20px;
+    padding-bottom: 30px;
+    padding-top: 100px;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+    align-items: center;
+ }
+
+ .ms-welcome__main {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+    -webkit-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    -webkit-align-items: center;
+    align-items: center;
+    -webkit-flex: 1 0 0;
+    flex: 1 0 0;
+    padding: 10px 20px;
+ }
+
+ #error {
+  	color: #ff3333;
+ }
+
+ div.info-box {
+    margin-top: 12px;
+    margin-left: 12px;
+    margin-right: 12px;
+    width: 100%;
+    max-width: 400px;
+ }
+
+ p.info {
+  font-size: 16px;
+  margin-top: 0px;
+  width: 100%;
+ }
+
+ span.count {
+  font-weight: 600;
+ }
+
+ #copied-box {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    opacity: 0;
+    display: none;
+    transition: opacity 0.2s ease-in-out;
+    pointer-events: none;
+    display: flex;
+    align-items: center;
+    align-self: center;
+    justify-content: center;
+    text-align: center;
+    z-index: 200;
+ }
+
+ div.copied-box-content {
+    width: 60%;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    justify-content: center;
+    background-color:	#198754;
+    border-radius: 6px;
+    opacity: 0.95;
+    color: white;
+    font-weight: 600;
+    font-size: 14px;
+    box-shadow: 3px 3px lightblue;
+ }
+
+ #copy-to-clip {
+    position: absolute;
+    left: -999999px;
+ }
+ 
+ .title {
+     text-align: center;
+     color: #2d2d2d;
+     font-weight: 500;
+     word-wrap: break-word;
+     font-size: 22px;
+     padding-bottom: 6px;
+ }
+ 
+ .ms-welcome__features {
+     list-style-type: none;
+     margin-top: 20px;
+ }
+ 
+ .ms-welcome__features.ms-List .ms-ListItem {
+     padding-bottom: 20px;
+     display: -webkit-flex;
+     display: flex;
+ }
+ 
+ .ms-welcome__features.ms-List .ms-ListItem > .ms-Icon {
+     margin-right: 10px;
+ }
+ 
+ .ms-welcome__action.ms-Button--hero {
+     margin-top: 30px;
+ }
+ 
+.ms-Button.ms-Button--hero .ms-Button-label {
+  color: #0078d7;
+}
+
+.ms-Button.ms-Button--hero:hover .ms-Button-label,
+.ms-Button.ms-Button--hero:focus .ms-Button-label{
+  color: #005a9e;
+  cursor: pointer;
+}
+
+
+b {
+    font-weight: bold;
+}
